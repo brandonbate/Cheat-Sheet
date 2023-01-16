@@ -17,7 +17,7 @@ ls
 
 ### venv
 
-Creates a virtual environment:
+Create a virtual environment:
 ```
 py -3.7 -m venv virtualenv
 ```
@@ -31,7 +31,7 @@ deactivate
 ```
 
 ### git
-Creates an empty Git repository in current working directory
+Creates an empty Git repository in current working directory:
 ```
 git init .
 ```
