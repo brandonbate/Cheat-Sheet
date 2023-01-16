@@ -1,8 +1,4 @@
-Some random changes.
-
 # Cheat Sheet
-
-Blah
 
 ### Console Commands
 Print location of current working directory:
