@@ -1,4 +1,8 @@
+Some random changes.
+
 # Cheat Sheet
+
+Blah
 
 ### Console Commands
 Print location of current working directory:
@@ -59,13 +63,13 @@ Add Git repository in current folder to repository created at repository_url:
 ```
 git remote add origin repository_url
 ```
-Push content of Git repository to the repository at the aforementioned url:
+Push content of your repository to the repository at the aforementioned url:
 ```
 git push -u origin master
 ```
 Shows differences between files in folder and those in the repository.
 ```
-git differ
+git differ 
 ```
 	
 
