@@ -152,12 +152,16 @@ A basic Django project:
 |    +--- [...]
 ```
 
-- ```functional_tests.py``` contains test code that uses Selenium and geckodriver. 
-It can be a basic Python script (see Chapter 1) or uses the ```unittest``` module which involves inheriting from ```unittest.TestCase```
-(see Chapter 2).
-- ```my_app/tests.py``` contains unit tests in a class that inherits from ```TestCase``` in ```django.test```.
-- ```my_project/settings.py``` contains code that tells ```my_project``` about ```my_app```
-- ```my_app/views.py``` contains function definitions that render HTML for the user. These functions can hard code HTML (as in Chapter 3) or use  These functions are called by ```my_project/urls.py```.
-- ```my_project/urls.py``` contains code that maps web addresses to rendering functions (i.e. views) in ```my_app/views.py```.
-- ```my_project/
+- ```functional_tests.py``` contains test code that uses Selenium and geckodriver. It can be a basic Python script (see Chapter 1) or 
+use the ```unittest``` module which involves inheriting from ```unittest.TestCase``` (see Chapters 2 & 4).
+- ```my_app/tests.py``` contains unit tests in a class that inherits from ```TestCase``` in ```django.test``` (see Chapter 3).
+- - ```my_app/views.py``` contains function definitions that render HTML for the user.  These functions are called by ```my_project/urls.py```.
+They can be can be hard code HTML (see Chapter 3) or use external HTML documents (see Chapter 4). 
+- ```my_project/urls.py``` contains code that maps web addresses to rendering functions (i.e. views) in ```my_app/views.py``` (see Chapter 3).
+- ```my_app/templates/home.html``` is an HTML document that can be used by ```my_app/views.py``` to serve HTML content to the user (see Chapter 4).
+- ```my_project/settings.py``` contains code that registers ```my_app`` as an application within ```my_project```. This is needed for
+```my_app/views.py``` to render content in ```my_app/templates/``` (see Chapter 4).
+
+
+
 
