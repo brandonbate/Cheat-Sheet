@@ -104,7 +104,7 @@ git push -u origin main
 ### Django
 Creates a Django project in current directory.
 ```
-django-admin.py startproject project_name .
+django-admin.py startproject my_project .
 ```
 Start the Django web server.
 ```
@@ -118,23 +118,46 @@ Run unit tests:
 ```
 python manage.py test
 ```
+Create an app within the project:
+```
+python manage.py startapp my_app
+```
 
 ### Files
 
 A basic Django project:
 ```
-my_project
+.
++--- db.sqlite3
 +--- functional_tests.py
 +--- geckodriver.log
 +--- manage.py
-+--- project_name
++--- my_app
+|    +--- admin.py
+|    +--- apps.py
+|    +--- __init__.py
+|    +--- migrations
+|    |    +--- __init__.py
+|    +--- models.py
+|    +--- templates
+|    |    +---- home.html
+|    +--- tests.py
+|    +--- views.py
++--- my_project
 |    +--- __init__.py
 |    +--- settings.py
 |    +--- urls.py
 |    +--- wsgi.py
++--- virtualenv
+|    +--- [...]
 ```
 
-- ```functional_tests.py``` contains test code that uses the Selenium and the geckodriver. In Chapter 1 it is a basic Python script. In Chapter 2 use the ```unittest``` module which involves inheriting from ```unittest.TestCase```.
-
-
+- ```functional_tests.py``` contains test code that uses the Selenium and the geckodriver. 
+It can be a basic Python script (see Chapter 1) or uses the ```unittest``` module which involves inheriting from ```unittest.TestCase```
+(see Chapter 2).
+- ```my_app/tests.py``` contains unit tests in a class that inherits from ```TestCase``` in ```django.test```.
+- ```my_project/settings.py``` contains code that tells ```my_project``` about ```my_app```
+- ```my_app/views.py``` contains function definitions that render HTML for the user. These functions can hard code HTML (as in Chapter 3) or use  These functions are called by ```my_project/urls.py```.
+- ```my_project/urls.py``` contains code that maps web addresses to rendering functions (i.e. views) in ```my_app/views.py```.
+- ```my_project/
 
