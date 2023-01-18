@@ -107,5 +107,15 @@ Creates a Django project in current directory.
 django-admin.py startproject project_name .
 ```
 Start the Django web server.
-```python manage.py runserver```
+```
+python manage.py runserver
+```
+Run functional tests:
+```
+python functional_tests.py
+```
+Run unit tests:
+```
+python manage.py test
+```
 	
