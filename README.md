@@ -152,7 +152,7 @@ A basic Django project:
 |    +--- [...]
 ```
 
-- ```functional_tests.py``` contains test code that uses the Selenium and the geckodriver. 
+- ```functional_tests.py``` contains test code that uses Selenium and geckodriver. 
 It can be a basic Python script (see Chapter 1) or uses the ```unittest``` module which involves inheriting from ```unittest.TestCase```
 (see Chapter 2).
 - ```my_app/tests.py``` contains unit tests in a class that inherits from ```TestCase``` in ```django.test```.
