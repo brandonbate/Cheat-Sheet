@@ -1,5 +1,5 @@
 # Cheat Sheet
-
+---
 ### Console Commands
 Print location of current working directory:
 ```
@@ -15,7 +15,6 @@ ls
 ```
 ---
 ### venv
-
 Create a virtual environment:
 ```
 py -3.7 -m venv virtualenv
@@ -28,7 +27,7 @@ Deactivate a virtual environment:
 ```
 deactivate
 ```
-
+---
 ### Installation Command
 After creating a folder for your project and creating a virtual environment and activating it (see above for details),
 you should install Selenium and Django with the following command:
@@ -39,8 +38,7 @@ Be sure the [Geckodriver](http://github.com/mozilla/geckodriver/releases) is dow
 In Windows, place ```geckodriver.exe``` in the ```virtualenv\Scripts\``` of your project or in 
 ```C:\Users\[Your Username]\AppData\Local\Programs\Python\Python37\Scripts\```.
 In macOS or Linux, place program in ```virtualenv/bin/``` o your project or in ```/usr/local/bin```.
-
-
+---
 ### git
 Creates an empty Git repository in current working directory:
 ```
@@ -109,9 +107,7 @@ Update remote repository's main branch with content in current branch of local r
 ```
 git push -u origin main
 ```
-
-	
-
+---
 ### Django
 Creates a Django project in current directory.
 ```
@@ -133,9 +129,8 @@ Create an app within the project:
 ```
 python manage.py startapp my_app
 ```
-
+---
 ### Files
-
 A basic Django project:
 ```
 .
@@ -172,7 +167,3 @@ They can be can be hard code HTML (see Chapter 3) or use external HTML documents
 - ```my_app/templates/home.html``` is an HTML document that can be used by ```my_app/views.py``` to serve HTML content to the user (see Chapter 4).
 - ```my_project/settings.py``` contains code that registers ```my_app``` as an application within ```my_project```. This is needed for
 ```my_app/views.py``` to render content in ```my_app/templates/``` (see Chapter 4).
-
-
-
-
