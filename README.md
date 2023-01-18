@@ -28,8 +28,9 @@ Deactivate a virtual environment:
 deactivate
 ```
 ---
-### Installation Command
-Stuff
+### Installation Commands
+Be sure  [Geckodriver](http://github.com/mozilla/geckodriver/releases)  the is downloaded and properly installed.
+
 
 ---
 ### git
