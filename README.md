@@ -129,7 +129,7 @@ A basic Django project:
 ```
 .
 +--- db.sqlite3
-+--- <b>functional_tests.py</b>
++--- functional_tests.py
 +--- geckodriver.log
 +--- manage.py
 +--- my_app
