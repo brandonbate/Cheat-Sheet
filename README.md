@@ -118,9 +118,14 @@ Run unit tests:
 ```
 python manage.py test
 ```
-A typical Django project:
+
+### Files
+
+A basic Django project:
 ```
 my_project
++--- functional_tests.py
++--- geckodriver.log
 +--- manage.py
 +--- project_name
 |    +--- __init__.py
@@ -128,5 +133,8 @@ my_project
 |    +--- urls.py
 |    +--- wsgi.py
 ```
+
+- ```functional_tests.py``` contains test code that uses the Selenium and the geckodriver. In Chapter 1 it is a basic Python script. In Chapter 2 use the ```unittest``` module which involves inheriting from ```unittest.TestCase```.
+
 
 
