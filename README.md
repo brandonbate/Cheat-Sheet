@@ -32,6 +32,10 @@ deactivate
 Be sure  [Geckodriver](http://github.com/mozilla/geckodriver/releases)  the is downloaded and properly installed.
 After creating a folder for your project and creating a virtual environment and activating it (see above for details),
 you should install Selenium and Django with the following command:
+In Windows, place ```geckodriver.exe``` in ```virtualenv/Scripts/``` of your project or in 
+```C:/Users/Your_User_Name/AppData/Local/Programs/Python/Python37/Scripts/```.
+
+
 ```
 pip install "django<1.12" "selenium<4"
 ```
