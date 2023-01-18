@@ -35,38 +35,70 @@ Creates an empty Git repository in current working directory:
 ```
 git init .
 ```
-Add all content in current folder (and subfolders) to Git repository.
+Add all content in current working directory (and subfolders) to Git staging area.
 ```
 git add .
 ```
-Show which files in the current directory differ from those in the repository.
-```
-git status
-```
-Adds file_name to the list of files for Git to ignore.
-```
-echo "file_name" >> .gitignore
-```
-Tells repository to ignore files listed in .gitignore.
-```
-git add .gitignore
-```
-Updates git repository with latest version of files added:
+Updates git repository with latest version of files added to staging area.
 ```
 git commit -m "message"
 ```
-Add Git repository in current folder to repository created at repository_url:
+Identify tracked/untracked files. Identify whether files are unmodified, modified or staged.
+```
+git status
+```
+Adds ```file_name``` to the list of files for Git to ignore:
+```
+echo "file_name" >> .gitignore
+git add .gitignore
+git commit -m "updating .gitignore"
+```
+View the changes you made to the tracked files you've editted but have not yet staged:
+```
+git diff
+```
+View the difference between what you've staged and your latest commit:
+```
+git diff --staged
+```
+Remove file from system and next commit:
+```
+git rm my_file
+```
+Create a branch called ```my_branch```:
+```
+git branch my_branch
+```
+Switch to ```my_branch```:
+```
+git checkout my_branch
+```
+Merge ```my_branch``` into ```main```:
+```
+git checkout main
+git merge my_branch
+```
+Delete ```my_branch```
+```
+git branch -d my_branch
+```
+Clone remote repository at ```my_url```:
+```
+git clone my_url
+```
+Connect current local machine repository to remote repository at repository_url:
 ```
 git remote add origin repository_url
 ```
-Push content of your repository to the repository at the aforementioned url:
+Update current branch with main branch of remote repository:
 ```
-git push -u origin master
+git pull
 ```
-Shows differences between files in folder and those in the repository.
+Update remote repository's main branch with content in current branch of local repository:
 ```
-git differ 
+git push -u origin main
 ```
+
 	
 
 ### Django
