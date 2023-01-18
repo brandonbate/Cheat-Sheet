@@ -118,4 +118,15 @@ Run unit tests:
 ```
 python manage.py test
 ```
-	
+A typical Django project:
+```
+my_project
++--- manage.py
++--- project_name
+|    +--- __init__.py
+|    +--- settings.py
+|    +--- urls.py
+|    +--- wsgi.py
+```
+
+
