@@ -30,8 +30,11 @@ deactivate
 ---
 ### Installation Commands
 Be sure  [Geckodriver](http://github.com/mozilla/geckodriver/releases)  the is downloaded and properly installed.
-
-
+After creating a folder for your project and creating a virtual environment and activating it (see above for details),
+you should install Selenium and Django with the following command:
+```
+pip install "django<1.12" "selenium<4"
+```
 ---
 ### git
 Creates an empty Git repository in current working directory:
