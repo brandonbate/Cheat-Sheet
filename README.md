@@ -34,8 +34,7 @@ After creating a folder for your project and creating a virtual environment and 
 you should install Selenium and Django with the following command:
 In Windows, place ```geckodriver.exe``` in ```virtualenv/Scripts/``` of your project or in 
 ```C:/Users/Your_User_Name/AppData/Local/Programs/Python/Python37/Scripts/```.
-
-
+In macOS or Linux, place the program in ```virtualenv/bin/``` 
 ```
 pip install "django<1.12" "selenium<4"
 ```
