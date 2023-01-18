@@ -151,7 +151,7 @@ A basic Django project:
 +--- virtualenv
 |    +--- [...]
 ```
-
+Below is a description of the files we've worked with thus far (in order of appearance):
 - ```functional_tests.py``` contains test code that uses Selenium and geckodriver. It can be a basic Python script (see Chapter 1) or 
 use the ```unittest``` module which involves inheriting from ```unittest.TestCase``` (see Chapters 2 & 4).
 - ```my_app/tests.py``` contains unit tests in a class that inherits from ```TestCase``` in ```django.test``` (see Chapter 3).
