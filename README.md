@@ -13,7 +13,7 @@ Lists files in current working directory:
 ```
 ls
 ```
-
+---
 ### venv
 
 Create a virtual environment:
