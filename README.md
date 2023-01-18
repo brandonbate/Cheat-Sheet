@@ -159,7 +159,7 @@ use the ```unittest``` module which involves inheriting from ```unittest.TestCas
 They can be can be hard code HTML (see Chapter 3) or use external HTML documents (see Chapter 4). 
 - ```my_project/urls.py``` contains code that maps web addresses to rendering functions (i.e. views) in ```my_app/views.py``` (see Chapter 3).
 - ```my_app/templates/home.html``` is an HTML document that can be used by ```my_app/views.py``` to serve HTML content to the user (see Chapter 4).
-- ```my_project/settings.py``` contains code that registers ```my_app`` as an application within ```my_project```. This is needed for
+- ```my_project/settings.py``` contains code that registers ```my_app``` as an application within ```my_project```. This is needed for
 ```my_app/views.py``` to render content in ```my_app/templates/``` (see Chapter 4).
 
 
